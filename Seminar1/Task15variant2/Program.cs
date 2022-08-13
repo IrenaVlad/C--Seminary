@@ -23,6 +23,8 @@ switch (number)
     case 7:
      Console.WriteLine("Выходной день");
      break;
-
+    default:
+    Console.WriteLine("Ввели неверное число");
+    break;
 }
 
