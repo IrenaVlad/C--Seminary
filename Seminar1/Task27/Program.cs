@@ -1,8 +1,8 @@
 ﻿Console.WriteLine("Введите число : ");
 int N = Convert.ToInt32(Console.ReadLine());
-int[] Array = new int[N];
+int[] Array = new int[8];
 int sum = 0;
-int i = Array.Length;
+int i = ;
 int index = 0;
 while(index<i)
 {

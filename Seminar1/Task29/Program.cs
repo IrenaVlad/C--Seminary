@@ -1,15 +1,9 @@
-﻿int N = 8;
-int min = 0;
-int max = 10;
-int[] Array = (int N, int min, int max);
+﻿int[] array = new int[8];
+int i = 0;
+while(i < 8)
 {
-    int[] arr = new int[N];
-    for(int i = 0; i < N; i++)
-    {
-        arr [i] = new Random().Next(min, max);
-    }
-    return arr;
+    array [i] = new Random().Next(0, 100);
+    Console.Write($"[{array[i]}], ");
+    i++;
 }
-Console.Write();
-Console.WriteLine('[' + string.Join(", ", Array(i, min, max)) + ']');
 Console.WriteLine();
