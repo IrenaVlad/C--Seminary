@@ -1,12 +1,12 @@
 ﻿Console.WriteLine("Введите число : ");
 int N = Convert.ToInt32(Console.ReadLine());
-int[] Array = new int[8];
+string str = N.ToString();
 int sum = 0;
-int i = ;
+int i = str.Length;
 int index = 0;
-while(index<i)
+while(str[index] < i)
 {
-sum = sum + Array[index];
-index++;
+    sum = sum + str[index];
+    index++;
 }
 Console.WriteLine(sum);
