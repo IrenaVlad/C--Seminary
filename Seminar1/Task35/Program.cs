@@ -1,4 +1,4 @@
-﻿int[] array = new int[10];
+﻿int[] array = new int[123];
 Random rand = new Random();
 for(int a = 0; a < array.Length; a++)
 {
@@ -8,7 +8,7 @@ Console.WriteLine('[' + string.Join(", ", array) + ']');
 int count = 0;
 for(int a = 0; a < array.Length; a++)
 {
-    if(10 < array[a] < 100)
+    if(10 < array[a] & array[a] < 100)
     {
         count=count+1;
     }
