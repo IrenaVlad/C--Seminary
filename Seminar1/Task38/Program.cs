@@ -1,14 +1,15 @@
-﻿double[] arr = new double[] {1,4, 2,5, 3,8, 4,9, 0,5, 9,1, 5,5 };
- double max = arr[0];
- if(double i = 0; arr[i] > max; i++)
- {
-    max = arr[i];
- } 
- Console.WriteLine($"max = {max}");
- double min = arr[0];
- if(double i = 0; arr[i] < min; i++)
- {
-    min = arr[i];
- } 
- Console.WriteLine($"min = {min}");
-
+﻿public class Example
+{
+public static void Main()
+    {
+        double[] arr = { 8.4, 6.7, 1.2, 3.3, 4.8 };
+ 
+        Array.Sort(arr);
+        if (arr.Length > 0) {
+            Console.WriteLine("Минимальное значение равно " + arr[0]);
+            Console.WriteLine("Максимальное значение равно " + arr[arr.Length - 1]);
+        }
+        double sum = arr[arr.Length-1] - arr[0];
+        Console.WriteLine("Разница равна " + sum);
+    }
+}
