@@ -1,5 +1,4 @@
 ﻿int[,,] array = new int[2,2,2];
-int count = 0;
 Random rand = new Random();
 for(int i = 0; i < array.GetLength(0); i++)
     {
@@ -9,7 +8,6 @@ for(int i = 0; i < array.GetLength(0); i++)
             {
                 array[i,j,a] = rand.Next(10, 100);
                 Console.Write($"{array[i,j,a]}({i},{j},{a}) ");
-                count++;
             }
         }
         Console.WriteLine();
