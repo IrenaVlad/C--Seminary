@@ -9,7 +9,7 @@ int Ack(int m, int n)
   {
     return n + 1;
   } 
-  else if (n == 0) 
+  else if (n == 0 && m > 0) 
   {
     return Ack(m - 1, 1);
   }
@@ -18,5 +18,4 @@ int Ack(int m, int n)
     return Ack(m - 1, Ack(m, n - 1));
     }
 }
-
-Ack(m,n);
+Console.WriteLine($"Функция равна {Ack(m,n)}");
