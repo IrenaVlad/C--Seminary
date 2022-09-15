@@ -1,4 +1,4 @@
-﻿void PrintMatrix(int[,] Matrix);
+﻿void PrintMatrix(int[,] Matrix)
 {
     for(int i = 0; i < Matrix.GetLength(0); i++)
     {
@@ -21,7 +21,7 @@ int dist = N;
 for(int i = 0; i < matrix.Length; i++)
 {
     matrix[row, col] = i;
-    if(--dist == 0)
+    if(dist == 0)
     {
         dist = N*(turn%2)+M*((turn+1)%2)-2-(turn/2-1);
         int temp = stepCol;
